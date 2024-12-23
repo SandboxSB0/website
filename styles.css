@@ -1,0 +1,131 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 70px; /* Prevent footer from overlapping content */
+}
+
+/* Main container styling */
+.main-container {
+    text-align: center;
+    padding: 50px;
+    background: #111;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 100px; /* Space for the footer */
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #00f1ff;
+    text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 30px #00f1ff;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Who I am Section */
+.who-i-am {
+    margin-top: 30px;
+}
+
+.who-i-am h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00f1ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Button styles */
+.btn {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #00f1ff;
+    background: transparent;
+    border: 2px solid #00f1ff;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 241, 255, 0.5);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #00f1ff;
+    color: #111;
+    transform: translateY(-5px);
+}
+
+/* Button active state */
+.btn:active {
+    background-color: #00f1ff;
+    color: #111;
+    transform: translateY(2px);
+}
+
+/* Footer */
+footer {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #888;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-container {
+    animation: fadeIn 1s ease-out;
+}
